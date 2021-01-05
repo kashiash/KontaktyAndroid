@@ -1,0 +1,123 @@
+<android.widget.FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+   <android.widget.ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <android.widget.EditText
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextInputLayout">
+
+            <android.widget.EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText"
+               android:hint="@string/hint_name_required"
+               android:imeOptions="actionNext"
+               android:inputType="textCapWords|textPersonName"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneTextInputLayout">
+
+            <android.widget.EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText2"
+               android:hint="@string/hint_phone"
+               android:imeOptions="actionNext"
+               android:inputType="phone"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTextInputLayout">
+
+            <android.widget.EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText3"
+               android:hint="@string/hint_email"
+               android:imeOptions="actionNext"
+               android:inputType="textEmailAddress"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/streetTextInputLayout">
+
+            <android.widget.EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText4"
+               android:hint="@string/hint_street"
+               android:imeOptions="actionNext"
+               android:inputType="textCapWords|textPostalAddress"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityTextInputLayout">
+
+            <android.widget.EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText5"
+               android:hint="@string/hint_city"
+               android:imeOptions="actionNext"
+               android:inputType="textCapWords|textPostalAddress"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateTextInputLayout">
+
+            <android.widget.EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText6"
+               android:hint="@string/hint_state"
+               android:imeOptions="actionNext"
+               android:inputType="textPostalAddress|textCapCharacters"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zipTextInputLayout">
+
+            <android.widget.EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText7"
+               android:hint="@string/hint_zip"
+               android:imeOptions="actionDone"
+               android:inputType="number"/>
+         </com.google.android.material.textfield.TextInputLayout>
+      </android.widget.EditText>
+   </android.widget.ScrollView>
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/saveFloatingActionButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top|end"
+      android:layout_margin="@dimen/fab_margin"
+      android:src="@drawable/ic_save_24dp"/>
+
+</android.widget.FrameLayout>
